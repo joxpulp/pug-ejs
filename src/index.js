@@ -4,13 +4,13 @@ import Productos from './routes/products';
 
 const port = 8080;
 const app = express();
-const viewsPath = path.resolve(__dirname, '../views/pages');
+const viewsPath = path.resolve(__dirname, '../views');
 
 // Se indica directorio de almacenamiento de plantillas
 app.set('views', viewsPath)
 
 // Setear el uso del engine de handlebars
-app.set('view engine', 'ejs');
+app.set('view engine', 'pug');
 
 // Indica que el servidor esta levantado y corriendo en puerto especificado
 const server = app.listen(port, () => {
