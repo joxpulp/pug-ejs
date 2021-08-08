@@ -9,7 +9,7 @@ const viewsPath = path.resolve(__dirname, '../views');
 // Se indica directorio de almacenamiento de plantillas
 app.set('views', viewsPath)
 
-// Setear el uso del engine de handlebars
+// Setear el uso del engine de pug
 app.set('view engine', 'pug');
 
 // Indica que el servidor esta levantado y corriendo en puerto especificado
